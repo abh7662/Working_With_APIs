@@ -1,9 +1,31 @@
 // variables
 const urlBase = "https://api.punkapi.com/v2/beers";
+const filterABV = document.getElementById("filterABV")
+let optionsABV = ""
 
+filterABV.addEventListener("change", e =>{
+    const value = e.target.value
+    switch(value){
+        case "all":
+            optionsABV = ""
+            break
+        case "weak":
+            optionsABV = "abv_lt=4.6"
+            break
+        case "medium":
+            optionsABV = "abv_gt=4.5&abv_lt=7.6"
+            break
+        case "strong":
+            optionsABV = "abv_gt=7.5"
+            break
+    }
+    getBeers()
+})
 async function getBeers() {
     // fetch
-    const beerPromise = await fetch(urlBase);
+    const url = urlBase + "?" + optionsABV
+    console.log(url)
+    const beerPromise = await fetch(url);
     const beers = await beerPromise.json();
     
     // render data
