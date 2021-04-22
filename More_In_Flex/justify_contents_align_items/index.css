@@ -1,0 +1,32 @@
+* { box-sizing: border-box; }
+
+body {
+    margin: 0;
+    background: #2C73D2;
+    color: #fff;
+    text-align: center;
+}
+
+.flex-container {
+    border: 10px solid #F9F871;
+    max-width: 700px;
+    margin: 0 auto;
+    padding: .25em;
+    min-height: 350vh;
+    flex-flow: row   wrap;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: space-between;
+}
+
+.big {
+    font-size: 2em;
+}
+
+.flex-item {
+    background: #8BEE86;
+    margin: 25px;
+    padding: 25px;
+    color: #424656;
+}
