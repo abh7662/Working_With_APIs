@@ -32,6 +32,9 @@ body{
     /* flex-grow: 1; */
     /* flex-shrink: 0; */
     flex-basis: 500px;
+    /* shorthand */
+    /* flex: grow shrink basis */
+    flex: 0 1 auto; /*  default /*
 }
 .flex-item-2{
     background-color: rgba(0, 255, 0, .7);;
