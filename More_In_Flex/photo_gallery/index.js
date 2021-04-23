@@ -79,10 +79,11 @@ const bigImg = document.querySelector("#my-selected-photo")
 selectImg.slice(1).map((oneImg, index) => {
     oneImg.addEventListener("click", () => {
         bigImg.style.display = "block"
-        bigImg.src = `https://picsum.photos/id/${index}/200/200`
+        bigImg.src = oneImg.src.substr(0,oneImg.src.length-8)+"/300/300"
         // console.log(oneImg.src[-1])
+        // console.log(oneImg.src.substr(0,oneImg.src.length-8)+"300/300")
     })
-    console.log(oneImg)
+    // console.log(oneImg)
 })
 
 /* 
@@ -97,4 +98,17 @@ selectImg.slice(1).map((oneImg, index) => {
     
        Create a "click" event for each photo in my-photos
         -When clicked, load the clicked photo into the new img tag
+*/
+
+/* 
+    Challenge:
+        
+        Reverse the Column's direction in my-gallery
+            Such that my-photos appear over #my-selected-photo
+        
+        Change the size of #my-selected-photo to 300x300
+            And set its default src to be the 3rd item in the Photos array
+            
+        Align the photos in my-photos to the right, using Flexbox
+            Align #my-selected-photo to the left, using Flexbox
 */
