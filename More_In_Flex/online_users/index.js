@@ -1,4 +1,4 @@
-const data =[
+const users_data =[
   {
     "id": 1,
     "name": "Leanne Graham",
@@ -230,3 +230,26 @@ const data =[
     }
   }
 ]
+
+/* 
+    1. 
+    
+    Load users from users.json (originally from https://jsonplaceholder.typicode.com/users)
+    
+    Create a simple component that displays the user's username 
+        -Alongside a green circle
+        -The username and circle should be in individual divs
+        -Both should be vertically and horizontally centered
+        -The component should only be wide enough to Fit its Content (and some padding)
+*/
+
+const userDiv = users_data.map(user_data => {
+  return `        
+      <span class="circle"></span><span class="list">${user_data.username}</span><br>
+`
+}).join('')
+
+document.body.innerHTML = `<div class="user-list">${userDiv}</div>`
+
+
+
