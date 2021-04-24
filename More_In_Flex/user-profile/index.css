@@ -1,0 +1,9 @@
+html, body {
+    margin: 0;
+    padding: 0;
+    background-color: #7fc8f8;
+}
+
+* {
+    font-family: "Lucida Console", Monaco, monospace; 
+}
