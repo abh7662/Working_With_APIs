@@ -6,4 +6,49 @@ html, body {
 
 * {
     font-family: "Lucida Console", Monaco, monospace; 
+    box-sizing: border-box;
 }
+
+.user-profile{
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.user-profile-header{
+    justify-content: space-between;
+}
+.user-profile-address,.user-profile-header{
+    background-color: aquamarine;
+    font-size: 1.5rem;
+    font-weight: bold;
+    display: flex;
+    padding: .5rem;
+}
+
+.user-profile-company{
+    border: 2px solid black;
+    font-size: 1.3rem;
+    font-weight: bold;
+    background-color: rgb(247, 237, 226);
+    border-radius: 1.5rem;
+    padding: 1rem;
+    width: 99%;
+    align-self: center;
+    line-height: 1.6;
+    text-align: center;
+}
+
+.user-profile-contact{
+    border: 2px solid black;
+    font-size: 1.3rem;
+    font-weight: bold;
+    background-color: lightgreen;
+    padding: 1rem;
+    width: 100%;
+    align-self: center;
+    line-height: 1.6;
+    text-align: center;
+}
+
+
