@@ -7,7 +7,12 @@ html, body {
 * {
     font-family: "Lucida Console", Monaco, monospace; 
 }
-
+body{
+    display: flex;
+    height: 100vh;
+    flex-wrap: wrap;
+    flex-direction: column;
+}
 .user-online{
     height: 1rem;
     width: 1rem;
@@ -32,6 +37,28 @@ html, body {
 }
 
 .online-users{
+    /* display: flex;
+    flex-direction: column; */
+    /* width: 30%; */
+    overflow: auto;
+    max-width: 80%;
+}
+
+header, footer{
+    height: 10%;
+    width: 100%;
+    background-color: lightsalmon;
+    /* margin: 0; */
+}
+/* p{
+    margin: 0;
+} */
+
+/* main{
     display: flex;
-    flex-direction: column;
+} */
+
+.main-content{
+    background-color: lime;
+    /* flex: auto; */
 }

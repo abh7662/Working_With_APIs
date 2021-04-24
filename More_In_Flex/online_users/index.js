@@ -252,11 +252,23 @@ function getOnlineUser(user_data){
   return ` <div class="my-online-user">${userDiv}</div>`
 }
 
-document.body.innerHTML = `<div class=online-users>
+document.body.innerHTML = `
+<header>
+  header
+</header>
+
+<div class=online-users>
   ${
     users_data.map(user_data => getOnlineUser(user_data)).join('')
   }
-</div>`
+</div>
+<div class="main-content">
+  main content
+</div>
+<footer>
+  footer
+</footer>
+`
 
 
 
