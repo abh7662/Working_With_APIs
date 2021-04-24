@@ -7,22 +7,31 @@ html, body {
 * {
     font-family: "Lucida Console", Monaco, monospace; 
 }
-.user-list{
-    /* display: flex;
-    flex-direction: column; 
-    justify-content: center; 
-    align-items: center; */
-    text-align: center;
-}
-.circle{
-    height: 25px;
-    width: 25px;
+
+.user-online{
+    height: 1rem;
+    width: 1rem;
+    background-color: green;
     border-radius: 50%;
-    background-color: rgba(7, 119, 7, 0.5);
-    display: inline-block;
-
+    margin: 0 1rem;
+    order: 1
 }
 
-.list{
-    /* display: block; */
+.user-username{
+    order: 2
+}
+
+.my-online-user{
+    background-color: lightgreen;
+    font-size: 1.5rem;
+    padding: .5rem;
+    border-radius: .3rem;
+    display: flex;
+    align-items: center;
+    border: .1rem solid black;
+}
+
+.online-users{
+    display: flex;
+    flex-direction: column;
 }

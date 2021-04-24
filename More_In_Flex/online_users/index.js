@@ -243,13 +243,20 @@ const users_data =[
         -The component should only be wide enough to Fit its Content (and some padding)
 */
 
-const userDiv = users_data.map(user_data => {
-  return `        
-      <span class="circle"></span><span class="list">${user_data.username}</span><br>
-`
-}).join('')
+function getOnlineUser(user_data){
+  console.log(user_data.username)
+  const userDiv = `
+      <div class="user-username">${user_data.username}</div>
+        <div class="user-online">
+      </div>`
+  return ` <div class="my-online-user">${userDiv}</div>`
+}
 
-document.body.innerHTML = `<div class="user-list">${userDiv}</div>`
+document.body.innerHTML = `<div class=online-users>
+  ${
+    users_data.map(user_data => getOnlineUser(user_data)).join('')
+  }
+</div>`
 
 
 
