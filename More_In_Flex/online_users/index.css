@@ -7,58 +7,48 @@ html, body {
 * {
     font-family: "Lucida Console", Monaco, monospace; 
 }
-body{
+
+body {
     display: flex;
     height: 100vh;
     flex-wrap: wrap;
-    flex-direction: column;
-}
-.user-online{
-    height: 1rem;
-    width: 1rem;
-    background-color: green;
-    border-radius: 50%;
-    margin: 0 1rem;
-    order: 1
 }
 
-.user-username{
-    order: 2
-}
-
-.my-online-user{
-    background-color: lightgreen;
-    font-size: 1.5rem;
-    padding: .5rem;
-    border-radius: .3rem;
-    display: flex;
-    align-items: center;
-    border: .1rem solid black;
-}
-
-.online-users{
-    /* display: flex;
-    flex-direction: column; */
-    /* width: 30%; */
-    overflow: auto;
-    max-width: 80%;
-}
-
-header, footer{
+.header, .footer {
     height: 10%;
     width: 100%;
-    background-color: lightsalmon;
-    /* margin: 0; */
+    background-color: darksalmon;
 }
-/* p{
-    margin: 0;
-} */
 
-/* main{
+.main-content {
+    background-color: springgreen;
+    flex: auto;
+}
+
+.my-online-users {
+    max-height: 80%;
+    max-width: 250px;
+    overflow: auto;
+}
+
+.my-online-user {
+    background-color: lightgreen;
+    padding: 0.5rem;
     display: flex;
-} */
+    align-items: center;
+    border: 0.1rem solid black;
+}
 
-.main-content{
-    background-color: lime;
-    /* flex: auto; */
+.user-username {
+    order: 1;
+}
+
+.user-online {
+    order: 0;
+    margin-left: 0.1rem;
+    margin-right: 0.3rem;
+    height: 0.7rem;
+    width: 0.7rem;
+    background-color: green;
+    border-radius: 50%;
 }
