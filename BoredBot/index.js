@@ -20,7 +20,12 @@ url: https://apis.scrimba.com/bored/api/activity
 2. Display the text of the activity in the browser
 */
 
+const randomNumber = () => Math.ceil(Math.random()*256)
+
+
 document.querySelector(".btn").addEventListener("click",()=>{
+  document.body.style.background = `linear-gradient(0deg, rgba(${randomNumber()},${randomNumber()},${randomNumber()},1) 18%, rgba(${randomNumber()},${randomNumber()},${randomNumber()},1) 100%)`
+  document.querySelector(".btn").style.background = `rgba(${randomNumber()},${randomNumber()},${randomNumber()},1)`
   fetch("https://apis.scrimba.com/bored/api/activity")
     .then(response => response.json())
     .then(data => {
