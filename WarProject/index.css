@@ -22,12 +22,17 @@ button{
   font-size: 1.2em;
   align-self: stretch;
 }
+
+#getNewCards:disabled
+{
+  cursor: not-allowed;
+}
 #btn{
   width: 100px;
   align-self: flex-start;
 }
 .card-slots{
-  border: 1px solid black;
+  /* border: 1px solid black; */
   height: 120px;
   width: calc(120px * 5/7);
 }
@@ -36,4 +41,8 @@ button{
 }
 img{
   width: 100%;
+}
+h2{
+  margin: 0;
+  color: white;
 }
