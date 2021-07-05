@@ -1,0 +1,39 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+  background-image: url('table.png');
+  background-size: cover;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+
+button{
+  background-color: yellow;
+  border: none;
+  cursor: pointer;
+  padding: 6px;
+
+}
+#getNewCards{
+  font-size: 1.2em;
+  align-self: stretch;
+}
+#btn{
+  width: 100px;
+  align-self: flex-start;
+}
+.card-slots{
+  border: 1px solid black;
+  height: 120px;
+  width: calc(120px * 5/7);
+}
+.card-slots:nth-of-type(1){
+  margin-bottom: 50px;
+}
+img{
+  width: 100%;
+}
