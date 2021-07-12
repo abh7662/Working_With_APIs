@@ -63,3 +63,20 @@ setInterval(() => {
 //  getSeconds() - Returns the second (0-59).
 //  getMilliseconds() - Returns the milliseconds (0-999).
 //  getTimezoneOffset() - Returns the number of minutes between the machine local time and UTC.
+
+navigator.geolocation.getCurrentPosition(position => {
+  fetch(`https://apis.scrimba.com/openweathermap/data/2.5/weather?lat=${position.coords.latitude}&lon=${position.coords.longitude}&units=metric`)
+    .then(res => res.json())
+    .then(data => console.log(data))
+});
+
+/**
+ * Challenge: Get the user's current weather for their area and
+ * log it to the console
+ *
+ * BaseURL: https://apis.scrimba.com/openweathermap/data/2.5/weather
+ * Queries to include:
+ *     - lat (latitude)
+ *     - lon (longitude)
+ *     - units (imperial or metric)
+ */
