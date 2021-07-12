@@ -26,3 +26,16 @@ div.top{
 h1{
   text-align: center;
 }
+
+.crypto-top{
+  display: flex;
+  align-items: center;
+  font-size: 1.3rem;
+}
+.crypto-top span{
+  margin-left: 10px;
+}
+.crypto-top img{
+  /* width: 100%; */
+  object-fit: scale-down;
+}
